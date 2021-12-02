@@ -1,5 +1,3 @@
 <?php
-//ceci est un test
 
-
-?>
+require_once "../vues/index.php";

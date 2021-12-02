@@ -13,7 +13,7 @@ if (isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["password"
     $stmt = $db->prepare(<<<SQL
     SELECT *
     FROM Utilisateur
-    WHERE email = :email
+    WHERE mail = :email
     AND password = :password
     SQL);
 
@@ -38,4 +38,4 @@ else
 }
 
 if ($error != "")
-    header("Location: connectionController.php?error=$error");
+    header("Location: ../controleurs/C_connection.php?error=$error");

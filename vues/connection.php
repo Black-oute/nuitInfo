@@ -21,16 +21,18 @@
             <h1 class="h3 mb-3 fw-normal">Connectez-vous</h1>
 
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="name@exemple.com">
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@exemple.com" required>
                 <label for="email">Adresse email</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe" required>
                 <label for="password">Mot de passe</label>
             </div>
 
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Se connecter</button>
+            <input class="w-100 btn btn-lg btn-primary" type="submit" value="Se Connecter">
         </form>
+
+        <div class="text-danger mt-3"><?= $_GET["error"] ?></div>
     </main>
 
     <?php

@@ -24,7 +24,7 @@ if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["ema
             {
                 // requête sql
                 $stmt = $db->prepare(<<<SQL
-                INSERT INTO Utilisateur (pseudo, nom, prenom, email, mot_de_passe)
+                INSERT INTO Utilisateur (pseudo, nom, prenom, mail, mot_de_passe)
                 VALUES (:pseudo, :nom, :prenom, :email, :mot_de_passe);
                 SQL);
 
@@ -35,6 +35,8 @@ if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["ema
                     ":email" => htmlspecialchars($_POST["email"]),
                     ":mot_de_passe" => hash("sha256", htmlspecialchars($_POST["password"]))
                 ));
+
+                echo "ok";
             }
             else
             {
