@@ -12,54 +12,57 @@
 
 <body>
 
-    <div id="main-content">
+    <?php
+    require_once "../vues/includes/header.php";
+    ?>
 
+    <main class="form-signin text-center" style="margin-left: 30%; margin-right: 30%;">
         <form action="../models/registration.php" method="post">
-            <div class="mb-3">
-                <label for="username" class="form-label">Nom d'utilisateur</label>
-                <input type="text" name="username" class="form-control" id="username" required>
-            </div>
+            <h1 class="h3 mb-3 fw-normal">Inscrivez-vous</h1>
 
-            <div class="mb-3">
-                <label for="firstname" class="form-label">Prénom</label>
-                <input type="text" name="firstname" class="form-control" id="firstname" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="lastname" class="form-label">Nom</label>
-                <input type="text" name="lastname" class="form-control" id="lastname" required>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="username" id="username" placeholder="Nom d'utilisateur">
+                <label for="username">Nom d'utilisateur</label>
             </div>
             
-            <div class="mb-3">
-                <label for="email" class="form-label">Adresse email</label>
-                <input type="email" name="email" class="form-control" id="email" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="conf-email" class="form-label">Confirmer l'adresse email</label>
-                <input type="email" name="confirmEmail" class="form-control" id="conf-email" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="password" class="form-label">Mot de passe</label>
-                <input type="password" name="password" class="form-control" id="password" required>
-                <div id="passwordHelpBlock" class="form-text">
-                    Votre mot de passe doit contenir au moins 8 caractères.
-                </div>  
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Prénom">
+                <label for="firstname">Prénom</label>
             </div>
             
-            <div class="mb-3">
-                <label for="conf-password" class="form-label">Confirmer le mot de passe</label>
-                <input type="password" name="confirmPassword" class="form-control" id="conf-password" required>
-                <div id="passwordHelpBlock2" class="form-text">
-                    Votre mot de passe doit contenir au moins 8 caractères.
-                </div> 
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nom">
+                <label for="lastname">Nom</label>
             </div>
 
-            <button type="submit" class="btn btn-primary">S'inscrire</button>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@exemple.com">
+                <label for="email">Adresse email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="confirmEmail" id="conf-email" placeholder="name@exemple.com">
+                <label for="conf-email">Confirmer l'adresse email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+                <label for="password">Mot de passe</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="confirmPassword" id="conf-password" placeholder="Mot de passe">
+                <label for="conf-password">Confirmer le mot de passe</label>
+            </div>
+
+            <input type="submit" class="w-100 btn btn-lg btn-primary" value="Se Connecter"></button>
         </form>
+    </main>
 
-    </div>
+
+    <?php
+    require_once "../vues/includes/footer.php";
+    ?>
 
 </body>
 

@@ -14,8 +14,8 @@
         <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
     </ul>
 
-    <div class="col-md-3 text-end">
-        <a href="../controleurs/connectionController.php" class="btn btn-outline-primary me-2">Connexion</a>
-        <a href="../controleurs/registrationController.php" class="btn btn-primary">Inscription</a>
+    <div class="col-md-3 text-end" style="margin-right: 20px;">
+        <a href="../controleurs/C_connection.php" class="btn btn-outline-primary me-2">Connexion</a>
+        <a href="../controleurs/C_registration.php" class="btn btn-primary">Inscription</a>
     </div>
 </header>

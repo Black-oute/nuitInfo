@@ -17,7 +17,7 @@
     ?>
 
     <main class="form-signin text-center" style="margin-left: 30%; margin-right: 30%;">
-        <form action="../model/connection.php" method="post">
+        <form action="../models/connection.php" method="post">
             <h1 class="h3 mb-3 fw-normal">Connectez-vous</h1>
 
             <div class="form-floating mb-3">
