@@ -14,7 +14,7 @@
 
     <div id="main-content">
 
-        <form action="../models/connection.php" method="post">
+        <form action="../models/registration.php" method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Nom d'utilisateur</label>
                 <input type="text" name="username" class="form-control" id="username" required>
