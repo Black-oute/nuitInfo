@@ -3,6 +3,10 @@
  * Script de validation de l'inscription
  */
 
+require_once "connectionPDO.php";
+
+$error = "";
+
 // si données valides
 if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["email"]) && !empty($_POST["email"])
     && isset($_POST["confirmEmail"]) && !empty($_POST["confirmEmail"]) && isset($_POST["password"]) && !empty($_POST["password"])
@@ -34,20 +38,23 @@ if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["ema
             }
             else
             {
-                // ERREUR
+                $error = "Le mot de passe ne correspond pas";
             }
         }
         else
         {
-            // ERREUR
+            $error = "Mot de passe invalide";
         }
     }
     else
     {
-        // ERREUR
+        $error = "Email invalide";
     }
 }
 else
 {
-    // ERREUR
+    $error = "Formulaire invalide";
 }
+
+if ($error != "")
+    header("Location: registrationController.php?error=$error");

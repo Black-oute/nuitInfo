@@ -1,6 +1,11 @@
 <?php
+/**
+ * Script validation de la connexion
+ */
 
 require_once "connectionPDO.php";
+
+$error = "";
 
 if (isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["password"]) && !empty($_POST["password"]))
 {
@@ -24,10 +29,13 @@ if (isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["password"
     }
     else
     {
-        // ERREUR
+        $error = "Identifiants invalides";
     }
 }
 else
 {
-    // ERREUR
+    $error = "Formulaire invalide";
 }
+
+if ($error != "")
+    header("Location: connectionController.php?error=$error");
