@@ -14,10 +14,20 @@
 
     <div id="main-content">
 
-        <form action="models/connection.php" method="post">
+        <form action="../models/connection.php" method="post">
             <div class="mb-3">
                 <label for="username" class="form-label">Nom d'utilisateur</label>
                 <input type="text" name="username" class="form-control" id="username" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="firstname" class="form-label">Prénom</label>
+                <input type="text" name="firstname" class="form-control" id="firstname" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Nom</label>
+                <input type="text" name="lastname" class="form-control" id="lastname" required>
             </div>
             
             <div class="mb-3">
