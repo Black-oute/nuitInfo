@@ -12,6 +12,10 @@
 
 <body>
 
+    <?php
+    require_once "../vues/includes/header.php";
+    ?>
+
     <div id="main-content">
 
         <form action="../model/connection.php" method="post">
@@ -28,6 +32,10 @@
         </form>
 
     </div>
+
+    <?php
+    require_once "../vues/includes/footer.php";
+    ?>
 
 </body>
 
