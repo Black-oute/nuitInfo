@@ -4,7 +4,4 @@ echo "Hello world";
 
 
 
-
-
-
 ?>
