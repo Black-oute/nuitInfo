@@ -16,22 +16,22 @@
     require_once "../vues/includes/header.php";
     ?>
 
-    <div id="main-content">
-
+    <main class="form-signin text-center" style="margin-left: 30%; margin-right: 30%;">
         <form action="../model/connection.php" method="post">
-            <div class="mb-3">
-                <label for="email" class="form-label">Adresse email</label>
-                <input type="email" name="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Mot de passe</label>
-                <input type="password" name="password" class="form-control" id="password" required>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Valider</button>
-        </form>
+            <h1 class="h3 mb-3 fw-normal">Connectez-vous</h1>
 
-    </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@exemple.com">
+                <label for="email">Adresse email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
+                <label for="password">Mot de passe</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Se connecter</button>
+        </form>
+    </main>
 
     <?php
     require_once "../vues/includes/footer.php";

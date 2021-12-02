@@ -15,7 +15,7 @@
     </ul>
 
     <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Connexion</button>
-        <button type="button" class="btn btn-primary">Inscription</button>
+        <a href="../controleurs/connectionController.php" class="btn btn-outline-primary me-2">Connexion</a>
+        <a href="../controleurs/registrationController.php" class="btn btn-primary">Inscription</a>
     </div>
 </header>
