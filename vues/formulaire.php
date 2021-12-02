@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
         <form action="../models/registration.php" method="post">
             <div class="mb-3">
                 <label for="lastname" class="form-label">Nom</label>
-                <input type="text" name="lastname" class="form-control" id="username" required>
+                <input type="text" name="lastname" class="form-control" id="lastname" required>
             </div>
 
             <div class="mb-3">
@@ -26,37 +26,61 @@
             </div>
 
             <div class="mb-3">
-                <label for="lastname" class="form-label">Statut : (Sauveteur/Sauvé)</label>
-                <input type="text" name="lastname" class="form-control" id="lastname" required>
+                <label for="statut" class="form-label">Statut : (Sauveteur/Sauvé)</label>
+                <input type="text" name="statut" class="form-control" id="statut" required>
             </div>
             
             <div class="mb-3">
-                <label for="email" class="form-label">Date de naissance</label>
-                <input type="email" name="email" class="form-control" id="email" required>
+                <label for="birth" class="form-label">Date de naissance</label>
+                <input type="date" name="birth" class="form-control" id="birth" required>
             </div>
 
             <div class="mb-3">
-                <label for="conf-email" class="form-label">Date de deces</label>
-                <input type="email" name="confirmEmail" class="form-control" id="conf-email" required>
+                <label for="death" class="form-label">Date de deces</label>
+                <input type="date" name="death" class="form-control" id="death">
             </div>
 
             <div class="mb-3">
-                <label for="password" class="form-label">Mot de passe</label>
-                <input type="password" name="password" class="form-control" id="password" required>
-                <div id="passwordHelpBlock" class="form-text">
-                    Votre mot de passe doit contenir au moins 8 caractères.
-                </div>  
+                <label for="news" class="form-label">Infos complémentaire</label>
+                <input type="long-text" name="news" class="form-control" id="news" required> 
             </div>
             
             <div class="mb-3">
-                <label for="conf-password" class="form-label">Confirmer le mot de passe</label>
-                <input type="password" name="confirmPassword" class="form-control" id="conf-password" required>
-                <div id="passwordHelpBlock2" class="form-text">
-                    Votre mot de passe doit contenir au moins 8 caractères.
-                </div> 
+                <label for="nbChild" class="form-label">Nombre d'enfant</label>
+                <input type="number" name="nbChild" min="0" max="100" class="form-control" id="nbChild" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">S'inscrire</button>
+
+            <div class="mb-3">
+                <label for="married">Satut famillial</label><br>
+                <input type="radio" id="married1" name="married" value="oui">
+                <label for="married1">Oui</label><br>
+                <input type="radio" id="married2" name="married" value="non">
+                <label for="married2">Non</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="sources" class="form-label">Source (lien): </label>
+                <input type="text" name="sources" class="form-control" id="sources" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="decored">Décorer :</label><br>
+                <input type="radio" id="decored1" name="decored" value="oui">
+                <label for="decored1">Oui</label><br>
+                <input type="radio" id="decored2" name="decored" value="non">
+                <label for="decored2">Non</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="speech">As-t-il fait un discours :</label><br>
+                <input type="radio" id="speech1" name="speech" value="oui">
+                <label for="speech1">Oui</label><br>
+                <input type="radio" id="speech2" name="speech" value="non">
+                <label for="speech2">Non</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
 
     </div>
