@@ -18,8 +18,19 @@ if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["ema
             // si mot de passe confirmé
             if ($_POST["password"] == $_POST["confirmPassword"])
             {
-                echo "ok";
                 // requête sql
+                $stmt = $db->prepare(<<<SQL
+                INSERT INTO Utilisateur (pseudo, nom, prenom, email, mot_de_passe)
+                VALUES (:pseudo, :nom, :prenom, :email, :mot_de_passe);
+                SQL);
+
+                $stmt->execute(array(
+                    ":pseudo" => htmlspecialchars($_POST["username"]),
+                    ":nom" => htmlspecialchars($_POST["lastname"]),
+                    ":prenom" => htmlspecialchars($_POST["firstname"]),
+                    ":email" => htmlspecialchars($_POST["email"]),
+                    ":mot_de_passe" => hash("sha256", htmlspecialchars($_POST["password"]))
+                ));
             }
             else
             {
