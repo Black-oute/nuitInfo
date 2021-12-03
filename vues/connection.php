@@ -32,7 +32,7 @@
             <input class="w-100 btn btn-lg btn-primary" type="submit" value="Se Connecter">
         </form>
 
-        <div class="text-danger mt-3"><?= $_GET["error"] ?></div>
+        <div class="text-danger mt-3"><?= $errorMsg ?></div>
     </main>
 
     <?php

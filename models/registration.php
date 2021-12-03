@@ -33,7 +33,7 @@ if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["ema
                     ":nom" => htmlspecialchars($_POST["lastname"]),
                     ":prenom" => htmlspecialchars($_POST["firstname"]),
                     ":email" => htmlspecialchars($_POST["email"]),
-                    ":mot_de_passe" => hash("sha256", htmlspecialchars($_POST["password"]))
+                    ":mot_de_passe" => hash("sha1", htmlspecialchars($_POST["password"]))
                 ));
 
                 echo "ok";
