@@ -12,79 +12,76 @@
 
 <body>
 
+    <?php
+    require_once "../vues/includes/header.php";
+    ?>
+    
     <div id="main-content">
 
+    <main class="form-signin text-center" style="margin-left: 30%; margin-right: 30%;">
         <form action="../models/registration.php" method="post">
-            <div class="mb-3">
-                <label for="lastname" class="form-label">Nom</label>
+            <div class="form-floating mb-3">
                 <input type="text" name="lastname" class="form-control" id="lastname" required>
+                <label for="lastname" class="form-label">Nom</label>
             </div>
 
-            <div class="mb-3">
-                <label for="firstname" class="form-label">Prénom</label>
+            <div class="form-floating mb-3">
                 <input type="text" name="firstname" class="form-control" id="firstname" required>
+                <label for="firstname" class="form-label">Prénom</label>
             </div>
 
-            <div class="mb-3">
-                <label for="statut" class="form-label">Statut : (Sauveteur/Sauvé)</label>
+            <div class="form-floating mb-3">
                 <input type="text" name="statut" class="form-control" id="statut" required>
+                <label for="statut" class="form-label">Statut : (Sauveteur/Sauvé)</label>
             </div>
             
-            <div class="mb-3">
-                <label for="birth" class="form-label">Date de naissance</label>
+            <div class="form-floating mb-3">
                 <input type="date" name="birth" class="form-control" id="birth" required>
+                <label for="birth" class="form-label">Date de naissance</label>
             </div>
 
-            <div class="mb-3">
-                <label for="death" class="form-label">Date de deces</label>
+            <div class="form-floating mb-3">
                 <input type="date" name="death" class="form-control" id="death">
+                <label for="death" class="form-label">Date de deces (si mort)</label>
             </div>
 
-            <div class="mb-3">
-                <label for="news" class="form-label">Infos complémentaire</label>
-                <input type="long-text" name="news" class="form-control" id="news" required> 
+            <div class="form-floating mb-3">
+                <textarea name="news" class="form-control" id="news" rows="3"required></textarea>
+                <label for="news" class="form-label">Infos complémentaire</label> 
             </div>
             
-            <div class="mb-3">
-                <label for="nbChild" class="form-label">Nombre d'enfant</label>
+            <div class="form-floating mb-3">
                 <input type="number" name="nbChild" min="0" max="100" class="form-control" id="nbChild" required>
+                <label for="nbChild" class="form-label">Nombre d'enfant</label>
             </div>
 
-
-            <div class="mb-3">
-                <label for="married">Satut famillial</label><br>
-                <input type="radio" id="married1" name="married" value="oui">
-                <label for="married1">Oui</label><br>
-                <input type="radio" id="married2" name="married" value="non">
-                <label for="married2">Non</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="married">Marrier</label>
+                <input class="form-check-input" type="checkbox" id="married" value="marrier">
             </div>
 
-            <div class="mb-3">
-                <label for="sources" class="form-label">Source (lien): </label>
+            <div class="form-floating mb-3">
                 <input type="text" name="sources" class="form-control" id="sources" required>
+                <label for="sources" class="form-label">Source (lien): </label>
             </div>
 
-            <div class="mb-3">
-                <label for="decored">Décorer :</label><br>
-                <input type="radio" id="decored1" name="decored" value="oui">
-                <label for="decored1">Oui</label><br>
-                <input type="radio" id="decored2" name="decored" value="non">
-                <label for="decored2">Non</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="decored">Décorer</label>
+                <input class="form-check-input" type="checkbox" id="decored" value="decorer">
             </div>
-
-            <div class="mb-3">
-                <label for="speech">As-t-il fait un discours :</label><br>
-                <input type="radio" id="speech1" name="speech" value="oui">
-                <label for="speech1">Oui</label><br>
-                <input type="radio" id="speech2" name="speech" value="non">
-                <label for="speech2">Non</label>
-            </div>
+            <br>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="speech">As fait un discours</label>
+                <input class="form-check-input" type="checkbox" id="speech" value="speech">
+            </div><br>
 
             <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
-
+    </main>
     </div>
-
+    <?php
+    require_once "../vues/includes/footer.php";
+    ?>
 </body>
 
 </html>
