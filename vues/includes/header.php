@@ -5,7 +5,7 @@ if (!isset($_SESSION["username"]))
 }
 else
 {
-    $link = '<a href="../controleurs/C_disconnect.php" class="btn btn-outline-primary me-2">Déconnexnion</a>';
+    $link = '<a href="../controleurs/C_disconnect.php" class="btn btn-outline-primary me-2">Déconnexion</a>';
 }
 ?>
 
@@ -18,8 +18,8 @@ else
     </a>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="../controleurs/C_home.php" class="nav-link px-2 link-secondary">Accueil</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="../controleurs/C_home.php" class="nav-link px-2 link-dark">Accueil</a></li>
+        <li><a href="../controleurs/C_formulaire.php" class="nav-link px-2 link-dark">Ajout</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
