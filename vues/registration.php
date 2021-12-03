@@ -57,6 +57,8 @@
 
             <input type="submit" class="w-100 btn btn-lg btn-primary" value="Se Connecter">
         </form>
+        
+        <div class="text-danger mt-3"><?= $errorMsg ?></div>
     </main>
 
 

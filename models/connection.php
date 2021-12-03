@@ -27,6 +27,8 @@ if (isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["password"
         $_SESSION["email"] = $stmt["mail"];
         $_SESSION["firstname"] = $stmt["prenom"];
         $_SESSION["lastname"] = $stmt["nom"];
+
+        header("Location: ../controleurs/C_home.php");
     }
     else
     {

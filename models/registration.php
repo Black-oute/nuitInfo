@@ -36,7 +36,7 @@ if (isset($_POST["username"]) && !empty($_POST["username"]) && isset($_POST["ema
                     ":mot_de_passe" => hash("sha1", htmlspecialchars($_POST["password"]))
                 ));
 
-                echo "ok";
+                header("Location: ../controleurs/C_connection.php");
             }
             else
             {
@@ -59,4 +59,4 @@ else
 }
 
 if ($error != "")
-    header("Location: registrationController.php?error=$error");
+    header("Location: ../controleurs/C_registration.php?error=$error");
