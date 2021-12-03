@@ -1,0 +1,17 @@
+{
+    "site" : "Rescuer at sea Dunkirk",
+    "nom" : "Name",
+    "prenom" : "First name",
+    "statut" : "Status (Lifeguard / Save)",
+    "dateNaissance" : "Date of Birth",
+    "dateDeces" : "Date of death",
+    "autreInfo" : "Additional Info",
+    "photo" : "Photo",
+    "nombreEnfant" : "Number of children",
+    "mariage" : "Wedding",
+    "source" : "Source",
+    "decoration" : "Decoration",
+    "discours" : "Speech",
+    "oui" : "Yes",
+    "non" : "No"
+}

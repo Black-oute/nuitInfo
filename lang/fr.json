@@ -2,5 +2,16 @@
     "site" : "Sauveteur en mer Dunkerquois",
     "nom" : "Nom",
     "prenom" : "Prenom",
-    "statut" : "Statut (Sauveteur/Sauver)"
+    "statut" : "Statut (Sauveteur/Sauver)",
+    "dateNaissance" : "Date de Naissance",
+    "dateDeces" : "Date de Deces",
+    "autreInfo" : "Infos Complementaire",
+    "photo" : "Photo",
+    "nombreEnfant" : "Nombre d'enfant",
+    "mariage" : "Mariage",
+    "source" : "Source",
+    "decoration" : "Decoration",
+    "discours" : "Discours",
+    "oui" : "Oui",
+    "non" : "Non"
 }

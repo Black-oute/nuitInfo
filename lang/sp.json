@@ -1,0 +1,17 @@
+{
+    "site" : "Salvador en el mar Dunkerque",
+    "nom" : "Apellido",
+    "prenom" : "Primer Nombre",
+    "statut" : "Estado (salvavidas / guardar)",
+    "dateNaissance" : "Fecha de nacimiento",
+    "dateDeces" : "Fecha de muerte",
+    "autreInfo" : "Información adicional",
+    "photo" : "Foto",
+    "nombreEnfant" : "Numero de niños",
+    "mariage" : "Boda",
+    "source" : "Origen",
+    "decoration" : "Decoracion",
+    "discours" : "Habla",
+    "oui" : "Si",
+    "non" : "No"
+}
