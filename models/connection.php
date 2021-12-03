@@ -4,6 +4,7 @@
  */
 
 require_once "connectionPDO.php";
+session_start();
 
 $error = "";
 

@@ -1,3 +1,14 @@
+<?php
+if (!isset($_SESSION["username"]))
+{
+    $link = '<a href="../controleurs/C_connection.php" class="btn btn-outline-primary me-2">Connexion</a>';
+}
+else
+{
+    $link = '<a href="../controleurs/C_disconnect.php" class="btn btn-outline-primary me-2">Déconnexnion</a>';
+}
+?>
+
 <header
     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
@@ -15,7 +26,7 @@
     </ul>
 
     <div class="col-md-3 text-end" style="margin-right: 20px;">
-        <a href="../controleurs/C_connection.php" class="btn btn-outline-primary me-2">Connexion</a>
+        <?= $link ?>
         <a href="../controleurs/C_registration.php" class="btn btn-primary">Inscription</a>
     </div>
 </header>
