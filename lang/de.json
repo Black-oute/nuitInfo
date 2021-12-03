@@ -1,0 +1,17 @@
+{
+    "site" : "Retter auf See Dunkirchen",
+    "nom" : "Name",
+    "prenom" : "Vorname",
+    "statut" : "Status (Rettungsschwimmer / Speichern)",
+    "dateNaissance" : "Geburtsdatum",
+    "dateDeces" : "Sterbedatum",
+    "autreInfo" : "Zusätzliche Information",
+    "photo" : "Foto",
+    "nombreEnfant" : "Anzahl der Kinder",
+    "mariage" : "Hochzeit",
+    "source" : "Ursprung",
+    "decoration" : "Dekoration",
+    "discours" : "Rede",
+    "oui" : "Ja",
+    "non" : "Nein"
+}
